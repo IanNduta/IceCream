@@ -8,6 +8,7 @@ const sprinklesOptInput = document.getElementById("sprinklesOptInput");
 const whippedCreamInput = document.getElementById("whippedCreamInput");
 const hotFudgeInput = document.getElementById("hotFudgeInput");
 const cherryOptInput = document.getElementById("cherryOptInput");
+const toppingRow = document.getElementById("toppingRow");
 //button
 const submitBtn = document.getElementById("submitBtn");
 //outputs
@@ -18,8 +19,9 @@ const outputTotalDue = document.getElementById("outputTotalDue");
 window.onload = function(){
     console.log("init");
     submitBtn.onclick = onClickedSubmitBtn;
-    cupOptInput.onclick = noHideOrShowToppings;
-}
+    cupOptInput.onclick = toggleToppingsRowVisibility;
+    coneOptInput.onclick = toggleToppingsRowVisibility;
+};
 
 function onClickedSubmitBtn(){
     console.log("onClickedSubmitBtn");
@@ -103,6 +105,19 @@ function onClickedSubmitBtn(){
     outputBassPrice.innerHTML = 2.25;
     outputTax.innerHTML = 1.99;
     outputTotalDue.innerHTML = totalAmountDue;  
+}
+
+function toggleToppingsRowVisibility(){
+    console.log("toggle");
+    let shouldBeVisible = cupOptInput.checked;
+    console.log(shouldBeVisible);
+
+    if(shouldBeVisible){
+        toppingRow.style.display = "block";
+    }
+    else{
+        toppingRow.style.display = "none";
+    }
 }
 
 
