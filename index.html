@@ -50,17 +50,76 @@
     </header>
 
     <main>
-        <div class="container"> </div>
-        <div class="row">
-            <div class="col">
-                <h1>Hello, world!</h1>
-            </div>
-        </div>
+        <div class="container">
+            <div class="text center">
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="numOfScoopInput">Number of scoops</label>
+                            <input id="numOfScoopInput" type="text" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row p-2">
+                        <div class="col">
+                            <div id="fix" class="">
+                                <label for="coneOptInput">Cone</label>
+                                <input id="coneOptInput" type="radio"  name="option" value="Cone" checked>
+                            </div>
+                            <div id="fix">
+                                <label for="cupOptInput">Cup</label>
+                                <input id="cupOptInput" type="radio" name="option" value="cup" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="row">
+                        <div class="col">
+                            <input id="sprinklesOptInput" type="checkbox" name="toppingsOption" value="sprinkles">
+                            <label for="sprinklesOptInput">Sprinkles ($.50)</label>
+                        </div>
+                        <div class="col">
+                            <input id="whippedCreamInput" type="checkbox" name="toppingsOption" value="Whipped Cream">
+                            <label for="whippedCreamInput">Whipped Cream ($0.25)</label>
+                        </div>
+                    </div>
 
-        <div class="container"> </div>
-        <div class="row">
-            <div class="col">
-                <h1>Hello, world!</h1>
+                    <div class="row">
+                        <div class="col">
+                            <input id="hotFudgeInput" type="checkbox" name="toppingsOption" value="Hot Fudge">
+                            <label for="hotFudgeInput">Hot Fudge ($1.25)</label>
+                        </div>
+                        <div class="col">
+                            <input id="cherryOptInput" type="checkbox" name="toppingsOption" value="Cherry">
+                            <label for="cherryOptInput">Cherry ($0.25)</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <input id="submitBtn" type="button" value="Submit Order">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <di>
+                            <label>Base Price: </label>
+                            <span id="outputBassPrice">xxx</span>
+                        </di>
+                        <di>
+                            <label>Tax: </label>
+                            <span id="outputTax">xxx</span>
+                        </di>
+                        <di>
+                            <label>Total Due: </label>
+                            <span id="outputTotalDue">xxx</span>
+                        </di>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
